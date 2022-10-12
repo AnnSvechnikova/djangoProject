@@ -1,0 +1,6 @@
+<head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/links.css' %}">
+</head>
+
+<li><a href="{% url 'book_url' elem.id %}" >{{ elem.title }}</a> </li>

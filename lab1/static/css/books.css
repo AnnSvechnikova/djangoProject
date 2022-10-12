@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+    font-family: 'Crimson Text';
+    font-size: 30px;
+	font-style: normal;
+	font-weight: normal;
+}
+
+.bk_list {
+    padding:0;
+    list-style: none;
+    color: #506a6b;
+}
+.bk_list li {
+    position: relative;
+    padding: 10px 30px;
+    background: lightcyan;
+    color: #506a6b;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0, .2);
+    margin-bottom: 5px;
+    text-align:left;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+.bk_list li:hover {
+    border: 2px solid #ADCEE9;
+    background-color: white;
+}

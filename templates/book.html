@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Книга {{ data.title }}{% endblock %}
+{% block content %}
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/book.css' %}">
+    </head>
+    <div class="descr">
+    <p>{{ data.title }}</p>
+    <p>Описание книги: {{ data.descr }}</p>
+    </div>
+    <div class="cover">
+    <img src="{% static data.img %}">
+    </div>
+{% endblock %}

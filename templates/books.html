@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Ассортимент{% endblock %}
+{% block content %}
+    <head>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/books.css' %}">
+    </head>
+    <body>
+    Актуальный ассортимент на {{ data.current_date }} :
+    <ul class="bk_list">
+        {% for book in data.books %}
+            {% if book.in_stock > 0 %}
+                {% include 'books_elem.html' with elem=book %}
+            {% endif %}
+        {% empty %}
+            <li>Весь ассортимент выкуплен!</li>
+        {% endfor %}
+    </ul>
+    </body>
+{% endblock %}

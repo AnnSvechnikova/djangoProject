@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>BMSTU</title>
+</head>
+<body>
+    Уважаемые покупатели,
+    ассортимент на {{ data.current_date }} :
+    <ul>
+        {% for book in data.books %}
+            {% if book.in_stock > 0 %}
+                <li>{{ book.title }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>
