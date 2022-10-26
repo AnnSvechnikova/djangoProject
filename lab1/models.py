@@ -36,7 +36,7 @@ class Orders(models.Model):
     order_date = models.DateField()
     pay_date = models.DateField()
     deliv_date = models.DateField()
-    status = models.CharField(max_length=1)
+    status = models.CharField(max_length=10)
 
     class Meta:
         managed = True
