@@ -9,7 +9,7 @@ class Books(models.Model):
     title = models.CharField(max_length=30)
     in_stock = models.IntegerField(default=0)
     descr = models.CharField(max_length=255)
-    price = models.IntegerField()
+    price = models.FloatField()
     picture = models.CharField(max_length=255)
 
     class Meta:

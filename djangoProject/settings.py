@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'bookshop',
         'USER': 'dbuser',
-        'PASSWORD': '',
+        'PASSWORD': 'databaseuser1',
         'HOST': 'localhost',
         'PORT': 3306,
         'OPTIONS': {'charset': 'utf8'},
